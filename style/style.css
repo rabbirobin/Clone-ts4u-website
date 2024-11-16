@@ -410,6 +410,7 @@ header{
     max-width: 65%;
     max-height: auto;
     grid-template-columns:minmax(280px, 1fr) minmax(320px, 1fr) repeat(3, 1fr);
+    grid-auto-rows: auto auto auto;
     gap: 20px;
     padding-top: 30px;  
     margin: 0 auto;
@@ -517,14 +518,16 @@ button:hover{
 
 @media screen and (max-width: 596px) {
 
-    .logo{
-    
+    .logo img{
+       margin-left: -50px;
+       margin-top: -20px;
         height: 100px;
-        width: 100px;
-        /* margin-left: 300px; */
-        margin-top: 50px;
+        width: 120px;
         
-    }
+        
+    } 
+
+    
 
     .service {
         padding: 10px;
@@ -548,9 +551,10 @@ button:hover{
         width: 85vw;
         height: auto;
         margin-left: -70px;
+        margin-top: 80px;
         
         
-        
+
         
     }
     .service-left-img img{
@@ -560,6 +564,7 @@ button:hover{
         margin:0 auto;
         height: 250px;
         width: 250px;
+        margin-right: 20px;
         
         
     }
@@ -578,6 +583,7 @@ button:hover{
         align-items: center;
         margin-top: 20px;
         width: 85vw;
+        margin-left: 10px;
         
        
     }
@@ -614,6 +620,10 @@ button:hover{
         
     }
 
+    .service-right{
+        margin-left: 20px;
+    }
+
     .all-offer{
         display: grid;
         max-width: 85%;
@@ -624,18 +634,80 @@ button:hover{
         align-items: center;
     }
 
-   
+    .technology-container{
+        display: flex;
+        flex-wrap: wrap;
+        background-color: #062539;
+        width: 85%;
+        height: auto;
+        margin-bottom: 30px;
+        margin-left: 30px;
+        margin-right: 200px;
+        
+    }
 
     .technology-details{
         display: grid;
-        max-width: 85%;
+        max-width: 100%;
+        
         grid-template-columns: 1fr;
         margin: 0 auto;
         justify-content: center;
         align-items: center;
-        gap: 50px;
+        gap: 10px;
     }
 
+    .technology-container-left{
+        padding-left: 10px;
+        padding-right: 10px;
+        color: white;
+
+    }
+    
+    .technology-container-left h1{
+        margin-top: 10px;
+        font-size: 30px;
+    }
+    
+    .techonology-button{
+        margin-top: 15px;
+        margin-bottom: 10px;
+        
+        
+    }
+    
+    .techonology-button button{
+        height: 40px;
+        width: 80px;
+        margin-right: 10px;
+        border: none;
+        
+    }
+    
+    .techonology-button button a{
+        text-decoration: none;
+        font-size: 18px;
+        color: black;
+    }
+    
+    .technology-container-left p{
+        text-align: justify;
+        font-size: 16px;
+        font-weight: lighter;
+    }
+
+   
+    
+    
+    .techonology-img img{
+       
+        height: 250px;
+        width: 100%;
+    }
+    
+    .Products-list h1{
+        font-size: 60px;
+    }
 
     .products{
         display: grid;
@@ -643,10 +715,11 @@ button:hover{
         max-height: auto;
         grid-template-columns: 1fr;
         grid-auto-rows: auto;
-        gap: 15px;
+        gap: 0px;
         justify-content: center;
         align-items: center;
         margin: 0 auto;
+        
           
         
     }
@@ -681,10 +754,15 @@ button:hover{
         margin: 0 auto;
     }
 
-    
+ 
+.footer_main{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+   
 
-    
-    
+
+
 
 
 }
