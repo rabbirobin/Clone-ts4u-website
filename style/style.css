@@ -338,13 +338,13 @@ header{
 .product{
    
     background-color: rgb(255, 255, 255);
-    border: 1px solid rgb(214, 214, 214);
+    border: 1px solid rgb(224, 224, 224);
     border-radius: 10px;
     width: auto;
     height: 265px;
     margin-bottom: 50px;
     align-content: center;
-    box-shadow: 0px 0px  10px 0.5px rgb(117, 117, 117);
+    box-shadow: 0px 0px  14px 0.8px rgb(231, 231, 231);
     
     
 
