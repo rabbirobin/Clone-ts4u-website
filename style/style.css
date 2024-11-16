@@ -87,10 +87,12 @@ header{
 
 .signin:hover{
     background-color: #0AC0A6;
+    transition: 0.5s;
 }
 
 .signup:hover{
     background-color: #062539;
+    transition: 0.5s;
 }
 
 
@@ -337,8 +339,8 @@ header{
 }
 .product{
    
-    background-color: rgb(255, 255, 255);
-    border: 1px solid rgb(224, 224, 224);
+    background-color: #ffffff;
+    border: 1px solid #e0e0e0;
     border-radius: 10px;
     width: auto;
     height: 265px;
