@@ -39,8 +39,16 @@ header{
 .nav-items{
     display: flex;
     flex-wrap: wrap;
-    /* padding-right: 50px; */
+    margin-right: 250px;
     
+    
+}
+
+.m{
+    display: flex;
+    flex-wrap: wrap;
+ 
+    align-items: center;
 }
 
 .nav-bar .nav-items li{
@@ -515,8 +523,107 @@ button:hover{
     padding-bottom: 10px;
 }
 
+#click{
+    display: none;
+}
+
+.menu-btn{
+  
+}
+
+.menu-btn i{
+    display: none;
+    color: #ffffff;
+    font-size: 30px;
+    cursor: pointer;
+    
+}
+
 
 @media screen and (max-width: 596px) {
+
+
+    .m{
+        display: block;
+        position: fixed;
+        top: 70px;
+        left: -100%;
+        background-color:#062539;
+        height: 100vh;
+        width: 100%;
+        text-align: center;
+        transition: all 0.3s ease;
+
+    }
+
+    
+    .menu-btn i{
+        display: block;
+    }
+    .nav-button{
+        display: flex;
+        z-index: 999;
+        flex-direction: column;
+        margin: 10px;
+        align-items: center;
+        margin-top: 200px;
+    }
+    .nav-items{
+        display: block;
+        position: fixed;
+        top: 80px;
+        width: 100%;
+        text-align: center;
+        transition: all 0.3s ease;
+        z-index: -1;
+    }
+
+    .nav-bar .nav-items li{
+        list-style: none;
+        padding-left: 0px;
+        
+    }
+
+    .nav-button button{
+    
+        border: 2px solid white;
+        border-radius: 30px;
+        height: 60px;
+        width: 400px;
+        
+        
+    }
+
+    .signin{
+        margin-bottom: 20px;
+        background: none;
+    }
+    
+    .signup{
+        background-color: #0AC0A6;
+    }
+    
+    .signin:hover{
+        background-color: #0AC0A6;
+        transition: 0.5s;
+    }
+    
+    .signup:hover{
+        background-color: #062539;
+        transition: 0.5s;
+    }
+
+    
+
+
+    #click:checked ~ .m{
+        left:0%;
+        
+    }
+
+    .nav-items li{
+        margin: 20px 0;
+    }
 
     .logo img{
        margin-left: -50px;
@@ -537,7 +644,7 @@ button:hover{
         display: grid;
         grid-template-columns: 1fr;
         grid-auto-rows: auto;
-        gap: 40px;
+        gap: 20px;
         max-width: 85vw; 
         justify-items: center;
         
@@ -568,6 +675,31 @@ button:hover{
         
         
     }
+
+    .service-details{
+        display: grid;
+        max-width: 100%;
+        grid-template-columns: 1fr 1fr; 
+        grid-auto-rows: auto;
+        gap: 20px;
+        column-gap: 60px;
+        margin-top: 20px;
+        color: white;
+        
+    
+    }
+
+    .service-details-items{
+        padding: 0px;
+        font-size: 20px;
+        font-weight: 600;
+    }
+
+    .service-details-items h1{
+        font-size: 30px;
+    }
+    
+    
 
     .heading{
         font-size: 28px;
