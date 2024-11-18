@@ -401,10 +401,11 @@ header{
 }
 
 .footer{
+    
     background-color: #062539;
     width: 100vw;
     height: auto;
-    justify-items: center;
+    justify-items: centerf;
     color: white;
     
 }
@@ -447,6 +448,30 @@ header{
     margin-bottom: 10px;
 }
 
+.address{
+    display: block;
+  
+}
+
+.programs{
+    display: block;
+    
+}
+
+.support{
+    display: block;
+   
+    
+}
+
+.our_products{
+    display: block;
+}
+
+.customer_care{
+    display: block;
+}
+
 .contact .socia_media a i{
     font-size: 30px;
     margin-top: 10px;
@@ -454,6 +479,16 @@ header{
     color: #0AC0A6;
 }
 
+.contact{
+    display: block;
+}
+
+.app{
+    display: block;
+    margin-top: 10px;
+    grid-column: 2 / 4;
+    
+}
 
 
 
@@ -507,11 +542,7 @@ header{
 }
 
 
-.app{
-    margin-top: 10px;
-    grid-column: 2 / 4;
-    
-}
+
 button:hover{
     cursor: pointer;
 }
@@ -521,6 +552,7 @@ button:hover{
     color: gray;
     font-weight: bolder;
     padding-bottom: 10px;
+    text-align: center;
 }
 
 #click{
@@ -538,6 +570,7 @@ button:hover{
     cursor: pointer;
     
 }
+
 
 
 @media screen and (max-width: 596px) {
@@ -908,12 +941,79 @@ button:hover{
         margin: 0 auto;
     }
 
- 
-.footer_main{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+
+    .footer{
+        
+        padding: 15px;
+        padding-top: 0px;
+        background-color: #062539;
+        width: 100vw;
+        height: auto;
+        color: white;
+        
+    }
+    
+    
+    
+    
+    
+    .footer_main{
+        display: grid;
+        max-width: 100%;
+        max-height: auto;
+        grid-template-columns: 1fr 1fr;
+        grid-auto-rows: auto;
+        gap: 20px;
+        padding-top: 30px;  
+        margin: 0 auto;
+        margin-bottom: 5px;
+        
+        
+    }
+
+
+    .app{
+    display: block;
+    margin-top: 10px;
+    grid-column: 1 / 3;
+    
 }
-   
+
+.app button{
+    
+    height: 60px;
+    width: 400px;
+    border-radius: 50px;
+    background-color: white;
+    border: none;
+    margin-bottom: 15px;
+    padding-left: 30px;
+    
+}
+
+.app a{
+    display: block;
+    text-align: center;
+    
+}
+
+.app .appstore{
+    height: 60px;
+    width: 350px;
+}
+
+    
+    
+    
+  
+    .copyright{
+        font-size: 20px;
+        color: gray;
+        font-weight: 100;
+        text-align: center;
+        padding-bottom: 10px;
+    }
+    
 
 
 
